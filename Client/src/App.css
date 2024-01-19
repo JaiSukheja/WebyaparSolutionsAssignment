@@ -1,0 +1,10 @@
+.app{
+    min-width: 100%;
+}
+.appContainer{
+    margin: 0 auto;
+    display: flex;
+    min-width: 100%;
+    background-color: white;
+    justify-content: center;
+}

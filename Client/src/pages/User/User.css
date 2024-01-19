@@ -1,0 +1,193 @@
+.UserPage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.ViewUsersViewButton{
+    margin: 20px;
+    align-self: end;
+    width: max-content;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+.UserContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.UserInput{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+}
+.UserInputField{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.UserInputLabel{
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+.UserInputValue{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+.UserInputButton{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0500FF;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.UserInputButton:hover{
+    background-color: #0300D8;
+}
+.UserInputField input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray!important;
+    outline: none;
+}
+.UserInputFile{
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray!important;
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+.UserImage{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.CustomFileInput {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .UserInputFile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .DottedBorder {
+    border: 2px dotted rgb(175, 175, 175);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; 
+    background-color: rgb(241, 239, 239);
+    border-radius: 5px;
+  }
+  
+  .DottedText {
+    color: rgb(188, 187, 187);
+  }
+  
+  .UserImage {
+    width: 100%;
+    max-height: 300px; 
+    object-fit: contain;
+  }
+
+  .viewBoxContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.195);
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+}
+.viewBox{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.ViewNameContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.viewLabel{
+    font-size: 16px;
+}
+.viewName{
+    font-size: 20px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 5px;
+}
+.ViewImageContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.viewImage{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.accepted{
+    color: #04c804;
+    font-size: 24px;
+    text-align: center;
+}
+.rejected{
+    color: #FF0000;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+    .UserInput{
+        width: 80%;
+    }
+    .viewBox{
+        width: 100%;
+    }
+}
